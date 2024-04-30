@@ -1,13 +1,11 @@
-Documentation for the project
-You can find a detailed documentation in macedonian for the project on our Wiki page
+You can find a detailed documentation in macedonian for the project on my Wiki page
 
 Get the application running
-Install all the necessary libraries
+Install all the necessary libraries (Most of them are in the project)
 
 Clone the repository
 Make a clone from the repository onto your machine
 
-git clone 
 Then open the project in your IDE of choice (preferably Visual Studio)
 
 Connect to the database
