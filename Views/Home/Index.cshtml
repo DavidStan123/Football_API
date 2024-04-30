@@ -1,0 +1,104 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            margin-left: 220px; /* Adjust based on nav width */
+            padding: 20px;
+        }
+
+
+        .news {
+            margin-top: 20px;
+        }
+
+            .news article {
+                background-color: #fff;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+                .news article h3 {
+                    color: #333;
+                }
+
+       
+
+    </style>
+</head>
+<body>
+    
+        <h1>Login</h1>
+        <form method="post" action="@Url.Action("Login", "Home")">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <br>
+            <input type="submit" value="Login">
+        </form>
+
+        <h1>Signup</h1>
+        <form method="post" action="@Url.Action("Signup", "Home")">
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" name="newUsername">
+            <br>
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <input type="submit" value="Signup">
+        </form>
+    
+    <header>
+        <h1>Welcome to Our Football Website</h1>
+    </header>
+
+    <main>
+
+        <section class="news">
+            <h2>Latest News</h2>
+            <article>
+                <h3>Exciting Match Results</h3>
+                <p>Three goals for Mbappe, Excellent performance for the star in PSG !</p>
+            </article>
+            <article>
+                <h3>New Signings</h3>
+                <p>New Youngster signs for Real Madrid.</p>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>

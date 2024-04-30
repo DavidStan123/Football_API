@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  
+</head>
+<body>
+    <div class="feedback">
+        <p>
+            Dear Customer,<br>
+            Thank you for using our page. We would like to know how we performed. Please spare some moments to give us your valuable feedback as it will help us in improving our service.
+        </p>
+
+        <h4>Please rate your service experience for the following parameters</h4>
+
+        <form method="post" action="#action-url">
+            <label>1. Your overall experience with us ?</label><br>
+
+            <span class="star-rating">
+                <input type="radio" name="rating1" value="1"><i></i>
+                <input type="radio" name="rating1" value="2"><i></i>
+                <input type="radio" name="rating1" value="3"><i></i>
+                <input type="radio" name="rating1" value="4"><i></i>
+                <input type="radio" name="rating1" value="5"><i></i>
+            </span>
+
+            <div class="clear"></div>
+            <hr class="survey-hr">
+            <label>2. Friendliness and courtesy shown to you while recieving your results</label><br>
+            <span class="star-rating">
+                <input type="radio" name="rating2" value="1"><i></i>
+                <input type="radio" name="rating2" value="2"><i></i>
+                <input type="radio" name="rating2" value="3"><i></i>
+                <input type="radio" name="rating2" value="4"><i></i>
+                <input type="radio" name="rating2" value="5"><i></i>
+            </span>
+            </br>
+            </br>
+            <div class="clear"></div>
+            <input style="background:#43a7d5;color:#fff;padding:12px;border:0" type="submit" value="Submit your review">
+        </form>
+    </div>
+</body>
+
+</html>
+
+<address>
+    Skopje, 1000<br />
+    <abbr title="Phone">P:</abbr>
+    070 111 222
+</address>
+
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@mail.com">Support@gmail.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@mail.com">Marketing@gmail.com</a>
+</address>
